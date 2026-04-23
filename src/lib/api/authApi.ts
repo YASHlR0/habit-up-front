@@ -60,15 +60,13 @@ export async function registerUser(
   try {
     // Opción 1: Usar los datos del formulario
     const payload = {
-      username: nombre,
-      password: password,
       fullName: nombre,
-      email: email
+      email: email,
+      password: password,
     };
     
     // Opción 2: Probar con datos que sabemos funcionan (descomentar para probar)
     // const payload = {
-    //   username: "Richard benjamin",
     //   password: "mi_password_seguro",
     //   fullName: "Richard Benjamin Perez", 
     //   email: "richard@ejemplo.com"
